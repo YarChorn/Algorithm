@@ -3,14 +3,12 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 C = []
 
-# Перебор на значения
-for i in A:
-    if i not in B:
-        C.append(i)
+for elem in A:
+    if elem not in B and elem not in C:
+        C.append(elem)
 
-for i in B:
-    if i not in A:
-        C.append(i)
+for elem in B:
+    if elem not in A and elem not in C:
+        C.append(elem)
 
-
-print(list(set(C)))
+# print(list(set(C)))

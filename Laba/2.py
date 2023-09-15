@@ -17,6 +17,10 @@ for i in range(N):
     elem = int(input())
     B.append(elem)
 
+for elem in A:
+    if elem in  B and elem not in C:
+        C.append(elem)
+
 set_A = set(A)
 set_B = set(B)
 
